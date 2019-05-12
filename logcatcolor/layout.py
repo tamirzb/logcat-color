@@ -68,7 +68,7 @@ class RawLayout(Layout):
 @layout
 class BriefLayout(Layout):
     NAME = "brief"
-    COLUMNS = (PIDColumn, TagColumn, PriorityColumn, MessageColumn)
+    COLUMNS = (PIDColumn, PriorityColumn, TagColumn, MessageColumn)
 
 @layout
 class ProcessLayout(Layout):
@@ -78,7 +78,7 @@ class ProcessLayout(Layout):
 @layout
 class TagLayout(Layout):
     NAME = "tag"
-    COLUMNS = (TagColumn, PriorityColumn, MessageColumn)
+    COLUMNS = (PriorityColumn, TagColumn, MessageColumn)
 
 @layout
 class ThreadLayout(Layout):
@@ -93,7 +93,7 @@ class TimeLayout(Layout):
 @layout
 class ThreadTimeLayout(Layout):
     NAME = "threadtime"
-    COLUMNS = (DateColumn, TimeColumn, PIDColumn, TIDColumn, TagColumn, PriorityColumn, MessageColumn)
+    COLUMNS = (DateColumn, TimeColumn, PIDColumn, TIDColumn, PriorityColumn, TagColumn, MessageColumn)
 
 @layout
 class LongLayout(Layout):
