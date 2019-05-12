@@ -40,7 +40,7 @@ class PIDColumn(Column):
     def format(self, pid):
         # center process info
         if self.width > 0:
-            pid = pid.center(self.width)
+            pid = pid.rjust(self.width)
 
         return Column.format(self, pid)
 
