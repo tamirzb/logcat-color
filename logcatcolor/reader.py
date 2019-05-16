@@ -121,7 +121,7 @@ class LogcatReader(FileLineReader):
         if Format.MARKER_REGEX.match(line):
             result = self.layout.layout_marker(line)
             if result:
-                self.writer.write(result)
+                self.writer.write(result + "\n")
             return
 
         try:
